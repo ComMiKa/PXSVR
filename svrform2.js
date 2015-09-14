@@ -1,3 +1,4 @@
+// PX Server Tnnl
 var formidable = require('formidable'),
     http = require('http'),
     util = require('util');
@@ -54,4 +55,8 @@ http.createServer(function(req, res) {
     '<input type="submit" value="Upload">'+
     '</form>'
   );*/
+    else{
+        console.log(req.method, " ", req.headers);
+        
+    }
 }).listen(9544);
